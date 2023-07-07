@@ -94,8 +94,8 @@ def execute_scraper(curr_page_url, curr_page_file_path, continue_loop, timeout):
     to be used, when continuing from a failed page instead of starting from first page
     for example, uncomment the below set of params to start scraping from page 41
     
-    page = 46
-    offset = 920
+    page = 49
+    offset = 980
     continue_loop = True
     timeout = 50000
     max_count = 29303
