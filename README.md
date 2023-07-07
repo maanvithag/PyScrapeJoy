@@ -1,4 +1,7 @@
 # PyScrapeJoy
+
+[![Playwright](https://img.shields.io/badge/playwright-1.35.0-seagreen)](https://playwright.dev/python/) [![Python](https://img.shields.io/badge/python-3.9.17-seagreen)](https://www.python.org/downloads/) [![Pandas](https://img.shields.io/badge/pandas-2.0.2-seagreen)](https://pypi.org/project/pandas/2.0.2/) [![MIT License](https://img.shields.io/badge/license-MIT-red)](https://www.python.org/downloads/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2)](https://www.linkedin.com/in/maanvithag/) 
+
 PyScrapeJoy is a python web scraper which scrapes and formats providers information from the cigna website, built using Python Sync Playwright. 
 
 ### Prerequisites:
