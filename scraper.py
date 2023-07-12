@@ -36,19 +36,18 @@ def main(args_file_path: str) -> None:
     
     for facet, val in facets.items():
         
-        if facet == 'Speech Therapy':
-            print("Scraping for ", facet, " with count: ", val)
-            
-            facet_en = facet.replace(' ', '%20')
-            facet_path = facet.replace(' ', '_')
-            
-            # update facet for file path
-            page_args['extract_file_path'] += f"{facet_path}_"
-            page_args['max_count'] = val
-            page_args['facet'] = facet_en
-            
-            pg_scraper = PageScraper(page_args)
-            args = pg_scraper.start_pagination()
+        print("Scraping for ", facet, " with count: ", val)
+        
+        facet_en = facet.replace(' ', '%20')
+        facet_path = facet.replace(' ', '_')
+        
+        # update facet for file path
+        page_args['extract_file_path'] += f"{facet_path}_"
+        page_args['max_count'] = val
+        page_args['facet'] = facet_en
+        
+        pg_scraper = PageScraper(page_args)
+        args = pg_scraper.start_pagination()
                 
     print(args.__dict__)
     
