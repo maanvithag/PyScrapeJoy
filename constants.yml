@@ -1,0 +1,16 @@
+# all default arguments for scraping providers
+page_args:
+  base_url: 'https://hcpdirectory.cigna.com/web/public/consumer/directory/doctors?city=New%20York&zipCode=10016&stateCode=NY&country=US&formattedAddress=New%20York,%20NY%2010016&latitude=40.747&longitude=-73.98&searchLocation=New%20York,%20NY%2010016&county=New%20york&providerGroupCode=P&providerAttributesName=MD&providerGroupCodes=P&searchCategoryType=doctor-name&searchCategoryCode=HSC03&searchTerm=MD&consumerCode=HDC001&medicalProductCode=AMP'
+  extract_file_path: './data_dump/10016_'
+  page: 1
+  offset: 0
+  limit: 20
+  timeout: 30000
+  min_sleep: 1
+  max_sleep: 10
+
+# all default arguments for scraping facets
+facets_args:
+  facets_base_url: 'https://hcpdirectory.cigna.com/web/public/consumer/directory/doctors?city=New%20York&zipCode=10016&stateCode=NY&country=US&formattedAddress=New%20York,%20NY%2010016&latitude=40.747&longitude=-73.98&searchLocation=New%20York,%20NY%2010016&county=New%20york&providerGroupCode=P&providerAttributesName=MD&providerGroupCodes=P&searchCategoryType=doctor-name&searchCategoryCode=HSC03&searchTerm=MD&consumerCode=HDC001&medicalProductCode=AMP'
+  facets_file_path: './facets.json'
+  facets_timeout: 30000
