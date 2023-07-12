@@ -1,0 +1,12 @@
+# Scraped Data files #
+######################
+data_dump/
+facets.json
+
+# Compiled files #
+######################
+__pycache__/
+
+# OS generated files #
+######################
+.DS_Store
